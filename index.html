@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Estudando Canvas</title>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById('text')
+            var context = canvas.getContext ('2d')
+
+            context.font = "italic 30pt arial";
+            context.fillText("Fim do Tutorial", 10, 100);
+        }
+    </script>
+</head>
+<body>
+    <img id="logo"src="imgs/yanvictorsnlogo.svg">
+    <h1>Canvas</h1>
+        <p>É um elemento HTML que cria uma janela podendo ser usado para manipular objetos usando JavaScript.<br>
+        Com ele é possível fazer:</p>
+            <ul>
+                <li>Desenhos</li>
+                <li>Animações</li>
+                <li>Combinações de Fotos</li>
+                <li>Escritas</li>
+            </ul>
+        <p>Para usarmos Canvas será preciso:<br> 1 - Criar uma tag Script<br> 2 - Criar variável <br> 3 - Chamar o documento a ser desenhado pelo ID (document.getElementByID();<br> 4 - Vincular a tag canvas por seu ID.</p>    
+
+    <canvas id="text" width="400" height="200"></canvas>
+</body>
+</html>
